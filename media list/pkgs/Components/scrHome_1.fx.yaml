@@ -1,0 +1,14 @@
+scrHome_1 As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =0
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(109, 49, 162, 1)
+        Fill: =RGBA(109, 49, 162, 1)
+        Width: =640
+        ZIndex: =1
+

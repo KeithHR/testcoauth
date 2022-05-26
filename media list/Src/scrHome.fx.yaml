@@ -1,0 +1,95 @@
+scrHome As screen:
+
+    scrHome_2 As scrHome_1:
+        Fill: =RGBA(109, 49, 162, 1)
+        Height: =71
+        Width: =1366
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =71
+        Size: =21
+        Text: ="Media Inventory App"
+        Width: =337
+        X: =514
+        ZIndex: =2
+
+    Image1 As image:
+        Height: =697
+        HoverFill: =ColorFade(Black, 20%)
+        Image: ='tv-shows-820x500'
+        Width: =720
+        Y: =71
+        ZIndex: =3
+
+    Image2 As image:
+        Height: =697
+        HoverFill: =ColorFade(Black, 20%)
+        Image: ='smash bros-1565003137288'
+        Width: =646
+        X: =720
+        Y: =71
+        ZIndex: =5
+
+    cvsTV_2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1_1.Y + RectQuickActionBar1_1.Height
+        ZIndex: =9
+
+        dcHomeTV As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    BtnGrp As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        Button1 As button:
+            Height: =45
+            OnSelect: =Navigate(scrTV,ScreenTransition.Fade);
+            Text: ="Add TV Show"
+            Width: =207
+            X: =76
+            Y: =101
+            ZIndex: =4
+
+        Button2 As button:
+            OnSelect: =Navigate(scrVG,ScreenTransition.Fade);
+            Text: ="Add Video Game"
+            Width: =181
+            X: =829
+            Y: =103
+            ZIndex: =6
+
+        Button2_1 As button:
+            Height: =43
+            Text: ="View Video Game List"
+            Width: =228
+            X: =1092
+            Y: =103
+            ZIndex: =7
+
+        Button1_1 As button:
+            Height: =45
+            OnSelect: =Navigate(scrTV,ScreenTransition.Fade);
+            Text: ="View TV List"
+            Width: =207
+            X: =337
+            Y: =103
+            ZIndex: =8
+
